@@ -1,4 +1,3 @@
-// map object
 const myMap = {
   coordinates: [],
   businesses: [],
@@ -54,7 +53,7 @@ async function getFoursquare(business) {
     method: "GET",
     headers: {
       Accept: "application/json",
-      Authorization: "fsq3ATzZbmcGhdeFafr73wZcnJ+LlN6bK+4dh19a7ClS4u8=",
+      Authorization: "fsq3DPIRjEdaYCMXh59t855Gj5SAd3imwHiRBbd1qr0cOGM=",
     },
   };
   let limit = 5;
@@ -90,6 +89,5 @@ window.onload = async () => {
   myMap.coordinates = coords;
   myMap.buildMap();
 };
-
 
 
